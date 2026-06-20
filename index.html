@@ -690,30 +690,27 @@
         /* ============ CATEGORY GRID ============ */
         .cat-strip {
             background: var(--steel);
-            padding: 50px clamp(16px, 5vw, 60px);
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
+            padding: 40px clamp(16px, 5vw, 60px);
+            display: flex;
+            overflow-x: auto;
             gap: 14px;
             border-top: 4px solid var(--ink);
             border-bottom: 4px solid var(--ink);
+            scrollbar-width: thin;
+            -webkit-overflow-scrolling: touch;
+            scroll-snap-type: x mandatory;
+            overscroll-behavior-x: contain;
+        }
+
+        .cat-strip .cat-chip {
+            flex: 0 0 auto;
+            width: 120px;
+            scroll-snap-align: start;
         }
 
         @media (max-width:900px) {
             .cat-strip {
-                display: flex;
-                overflow-x: auto;
-                gap: 14px;
-                scrollbar-width: thin;
-                -webkit-overflow-scrolling: touch;
-                padding: 40px clamp(16px, 5vw, 60px);
-                scroll-snap-type: x mandatory;
-                overscroll-behavior-x: contain;
-            }
-
-            .cat-strip .cat-chip {
-                flex: 0 0 auto;
-                width: 120px;
-                scroll-snap-align: start;
+                padding: 30px clamp(16px, 5vw, 60px);
             }
         }
 
@@ -942,7 +939,7 @@
 
         .bench-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-top: 50px;
         }
