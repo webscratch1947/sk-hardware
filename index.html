@@ -710,7 +710,7 @@
             background: var(--steel);
             padding: 50px clamp(16px, 5vw, 60px);
             display: grid;
-            grid-template-columns: repeat(8, 1fr);
+            grid-template-columns: repeat(7, 1fr);
             gap: 14px;
             border-top: 4px solid var(--ink);
             border-bottom: 4px solid var(--ink);
@@ -1618,13 +1618,19 @@
 
         /* ---------- Category strip data (real photo + label) ---------- */
         const categories = [
-            { label: 'PVC Pipes', img: 'pipes.png' },
-            { label: 'Electrical', img: 'wire_box.png' },
-            { label: 'Switches', img: 'switch_panel.png' },
             { label: 'Water Tanks', img: 'tank.png' },
-            { label: 'Power Tools', img: 'grinder.png' },
+            { label: 'PVC Pipes', img: 'pipes.png' },
+            { label: 'Electrical Wire', img: 'wire_box.png' },
+            { label: 'Switch Panel', img: 'switch_panel.png' },
+            { label: 'Angle Grinder', img: 'grinder.png' },
+            { label: 'Power Drill', img: 'drill.png' },
             { label: 'Hand Tools', img: 'hand_tools.png' },
-            { label: 'Safety Gear', img: 'helmet.png' },
+            { label: 'Safety Helmet', img: 'helmet.png' },
+            { label: 'Safety Vest', img: 'vest.png' },
+            { label: 'Work Gloves', img: 'gloves.png' },
+            { label: 'Safety Boots', img: 'boots.png' },
+            { label: 'Goggles', img: 'goggles.png' },
+            { label: 'Dust Mask', img: 'mask.png' },
         ];
 
         const catStrip = document.getElementById('catStrip');
