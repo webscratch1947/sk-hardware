@@ -558,19 +558,19 @@
             width: 170px;
             height: 200px;
             top: 0;
-            left: 18%;
+            left: 50%;
+            transform: translateX(-90%) rotate(-4deg);
             animation-delay: 0s;
-            transform: rotate(-4deg);
             z-index: 3;
         }
 
         .fp-helmet {
             width: 140px;
             height: 120px;
-            top: 30px;
-            right: 4%;
+            top: 20px;
+            left: 50%;
+            transform: translateX(20%) rotate(5deg);
             animation-delay: 0.6s;
-            transform: rotate(5deg);
             z-index: 2;
         }
 
@@ -578,49 +578,31 @@
             width: 150px;
             height: 130px;
             bottom: 30px;
-            left: 0;
+            left: 50%;
+            transform: translateX(-110%) rotate(3deg);
             animation-delay: 1.2s;
-            transform: rotate(3deg);
             z-index: 2;
         }
 
         .fp-vest {
             width: 130px;
             height: 120px;
-            bottom: 0;
-            right: 14%;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(10%) rotate(-3deg);
             animation-delay: 1.8s;
-            transform: rotate(-3deg);
             z-index: 1;
         }
 
         @keyframes floatPhoto {
-
-            0%,
-            100% {
-                transform: translateY(0) rotate(var(--r, 0deg));
-            }
-
-            50% {
-                transform: translateY(-12px) rotate(var(--r, 0deg));
-            }
+            0%, 100% { margin-top: 0px; }
+            50% { margin-top: -12px; }
         }
 
-        .fp-tank {
-            --r: -4deg;
-        }
-
-        .fp-helmet {
-            --r: 5deg;
-        }
-
-        .fp-pipes {
-            --r: 3deg;
-        }
-
-        .fp-vest {
-            --r: -3deg;
-        }
+        .fp-tank { }
+        .fp-helmet { }
+        .fp-pipes { }
+        .fp-vest { }
 
         .scroll-cue {
             position: absolute;
@@ -1455,10 +1437,6 @@
                 <div class="float-photo fp-pipes"><img src="pipes.png" alt="PVC pipes and fittings"></div>
                 <div class="float-photo fp-vest"><img src="vest.png" alt="Safety vest"></div>
             </div>
-        </div>
-
-        <div class="scroll-cue"><span>SCROLL</span>
-            <div class="chev"></div>
         </div>
 
         <div class="shutter-wrap" id="shutter"></div>
